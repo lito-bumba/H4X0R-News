@@ -11,6 +11,10 @@
 		663FB7E52ACF494E00F096CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663FB7E42ACF494E00F096CB /* ContentView.swift */; };
 		663FB7E72ACF495000F096CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663FB7E62ACF495000F096CB /* Assets.xcassets */; };
 		663FB7EA2ACF495000F096CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663FB7E92ACF495000F096CB /* Preview Assets.xcassets */; };
+		663FB7F22ACF4C3700F096CB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663FB7F12ACF4C3700F096CB /* NetworkManager.swift */; };
+		663FB7F42ACF4DD300F096CB /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663FB7F32ACF4DD300F096CB /* PostData.swift */; };
+		663FB7F72ACF541000F096CB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663FB7F62ACF541000F096CB /* DetailView.swift */; };
+		663FB7F92ACF57E800F096CB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663FB7F82ACF57E800F096CB /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		663FB7E42ACF494E00F096CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		663FB7E62ACF495000F096CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		663FB7E92ACF495000F096CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		663FB7F12ACF4C3700F096CB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		663FB7F32ACF4DD300F096CB /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		663FB7F62ACF541000F096CB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		663FB7F82ACF57E800F096CB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				663FB7E22ACF494E00F096CB /* H4X0R_NewsApp.swift */,
-				663FB7E42ACF494E00F096CB /* ContentView.swift */,
+				663FB7F52ACF53C400F096CB /* Views */,
+				663FB7F02ACF4C1700F096CB /* Models */,
 				663FB7E62ACF495000F096CB /* Assets.xcassets */,
 				663FB7E82ACF495000F096CB /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				663FB7E92ACF495000F096CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		663FB7F02ACF4C1700F096CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				663FB7F12ACF4C3700F096CB /* NetworkManager.swift */,
+				663FB7F32ACF4DD300F096CB /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		663FB7F52ACF53C400F096CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				663FB7E42ACF494E00F096CB /* ContentView.swift */,
+				663FB7F62ACF541000F096CB /* DetailView.swift */,
+				663FB7F82ACF57E800F096CB /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663FB7F22ACF4C3700F096CB /* NetworkManager.swift in Sources */,
+				663FB7F42ACF4DD300F096CB /* PostData.swift in Sources */,
 				663FB7E52ACF494E00F096CB /* ContentView.swift in Sources */,
+				663FB7F92ACF57E800F096CB /* WebView.swift in Sources */,
+				663FB7F72ACF541000F096CB /* DetailView.swift in Sources */,
 				663FB7E32ACF494E00F096CB /* H4X0R_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,6 +314,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bumba.news.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,6 +346,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bumba.news.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
